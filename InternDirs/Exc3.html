@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/foundation.css">
+<title>Exercise 2 - Comarch</title>
+</head>
+
+<body>
+<script>
+<input type="button" id="prompt" value="Okienko Prompt" />
+<script type="text/javascript">
+	
+	    function podaj_imie() {
+	    	var imie = prompt('podaj imie','imie' )
+	        if (imie != null && imie === typeof "") {
+	        	return imie;
+	        } else {
+	            return 'nie wiem';
+	        }
+	    
+	    
+	    function podaj_nazwisko(){
+			var nazwisko = prompt('podaj nazwisko','nazwisko' )
+	        if (nazwisko != null  && nazwisko === typeof "") {
+	           return nazwisko;
+	        } else {
+	           return 'nie wiem';
+	        }     
+	    
+       
+	        
+	    }
+	    
+	    function podaj_wiek(){
+	    	var wiek = prompt('podaj wiek','wiek' )
+	   
+	    	var imie = prompt('Podaj imię:', 'imie');
+	        if (wiek != null  && wiek === typeof 3) {
+	           return wiek;
+	        } else {
+	            podaj_wiek();
+	        }     
+	    
+       
+	       
+	        function czlowiek(imie, nazwisko, wiek){
+	        	this.imie=imie;
+	        	this.nazwisko=nazwisko;
+	        	this.wiek=wiek;
+	        	this.przedstawSie = function() {
+	        	        alert(this.imie + this.nazwisko + this.wiek)
+	        	    }
+	        	
+	        }
+
+	    
+	        var czlowiek1 = new czlowiek(imie, nazwisko, wiek);
+	        czlowiek1.wypisz();
+	         
+	        
+	        function czlowiek(imie, nazwisko, wiek){
+	        	this.imie='ada';
+	        	this.nazwisko='nazwisko';
+	        	this.wiek=16;
+	        	this.przedstawSie = function() {
+	        	        console.log + this.nazwisko + this.wiek)
+	        	    };
+	        	    
+	        	    
+	        	
+	        }
+    
+	        
+	       var imie= imiePrompt();
+	       console.log(imie);
+	       var nazwisko = nazwiskoPrompt();
+	       console.log(nazwisko);
+	       var wiek = wiekPrompt();
+	       console.log(wiek);
+	       
+	       var osoba = new czlowiek(imie, nazwisko, wiek);
+	       var human = new czlowiek('Ada', 'aaa', 22);
+		   
+		   
+<script src="js/vendor/jquery.js"></script>
+	<script src="js/foundation.min.js"></script><script>
+		$(document).foundation();	    
+</script>
+</body>
+
+</html>
